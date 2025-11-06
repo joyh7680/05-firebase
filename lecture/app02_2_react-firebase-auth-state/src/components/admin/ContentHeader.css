@@ -1,0 +1,12 @@
+.content-header {
+  margin-bottom: var(--spacing-md);
+}
+
+.content-header h1 {
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.content-header p {
+  color: #666;
+}

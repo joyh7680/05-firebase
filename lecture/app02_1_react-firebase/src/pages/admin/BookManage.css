@@ -1,0 +1,7 @@
+.book-manage-actions {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: var(--spacing-xl);
+  margin-top: var(--spacing-md);
+}
+

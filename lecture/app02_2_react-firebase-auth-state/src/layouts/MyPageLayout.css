@@ -1,0 +1,65 @@
+.mypage-layout {
+  display: flex;
+  gap: 1.5rem;
+  align-items: stretch;
+  min-height: calc(100vh - 64px - 72px);
+}
+
+.mypage-layout .mypage-sidebar {
+  width: 220px;
+  flex: 0 0 220px;
+}
+
+.mypage-layout .mypage-content {
+  flex: 1;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+/* MyPageSidebar 관련 스타일 */
+.mypage-sidenav {
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+.mypage-sidenav-title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 0.75rem;
+}
+
+.mypage-sidenav-menu {
+  list-style: none;
+}
+
+.mypage-sidenav-menu li {margin-bottom: 0.25rem;}
+
+.mypage-sidenav-menu a {
+  display: block;
+  color: #374151;
+  text-decoration: none;
+  padding: 0.5rem 0.625rem;
+  border-radius: 6px;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.mypage-sidenav-menu a:hover,
+.mypage-sidenav-menu a.active {
+  background: #eef2ff;
+  color: #111827;
+}
+
+
+
+@media (max-width: 768px) {
+  .mypage-layout {flex-direction: column;}
+  .mypage-layout .mypage-sidebar {width: 100%;}
+}
+

@@ -1,0 +1,68 @@
+/* 전역 디자인 토큰 변수 */
+
+:root {
+  /* ===== 색상 (Color) ===== */
+  
+  /* Primary (파란색 계열) */
+  --color-primary: #2563eb;
+  --color-primary-hover: #1d4ed8;
+  --color-primary-light: rgba(37, 99, 235, 0.15);
+  
+  /* Success (초록색 계열) */
+  --color-success: #16a34a;
+  --color-success-hover: #15803d;
+  
+  /* Danger (빨간색 계열) */
+  --color-danger: #dc2626;
+  --color-danger-hover: #b91c1c;
+  --color-danger-light: rgba(220, 38, 38, 0.10);
+  
+  /* Warning (주황색 계열) */
+  --color-warning: #f59e0b;
+  --color-warning-hover: #d97706;
+  
+  /* Neutral (회색 계열) */
+  --color-neutral-50: #f9fafb;
+  --color-neutral-100: #f3f4f6;
+  --color-neutral-200: #e5e7eb;
+  --color-neutral-300: #d1d5db;
+  --color-neutral-400: #9ca3af;
+  --color-neutral-600: #6b7280;
+  --color-neutral-900: #111827;
+  
+  /* Background */
+  --color-bg-primary: #ffffff;
+  --color-bg-overlay: rgba(0, 0, 0, 0.5);
+  
+  /* Text */
+  --color-text-primary: #111827;
+  --color-text-secondary: #6b7280;
+  --color-text-inverse: #ffffff;
+  
+  /* Border */
+  --color-border-default: #d1d5db;
+  --color-border-light: #9ca3af;
+  
+  /* ===== 간격 (Spacing) ===== */
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 12px;
+  --spacing-lg: 20px;
+  --spacing-xl: 24px;
+  
+  /* ===== 타이포그래피 (Typography) ===== */
+  --font-size-xs: 12px;
+  --font-size-sm: 14px;
+  --font-size-md: 16px;
+  --font-weight-normal: 400;
+  --font-weight-semibold: 600;
+  --line-height-base: 1;
+  
+  /* ===== Border Radius ===== */
+  --radius-sm: 6px;
+  --radius-md: 8px;
+  
+  /* ===== Shadow ===== */
+  --shadow-focus-primary: 0 0 0 3px var(--color-primary-light);
+  --shadow-focus-danger: 0 0 0 3px var(--color-danger-light);
+}
