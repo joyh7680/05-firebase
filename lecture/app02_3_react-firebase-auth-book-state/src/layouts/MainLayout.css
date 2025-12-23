@@ -1,0 +1,103 @@
+.main-layout .main-content {
+  max-width: 1200px;
+  margin: 64px auto 0; /* header height offset */
+  padding: 3rem 2.5rem;
+  min-height: calc(100vh - 64px - 72px); /* header + footer approx */
+}
+
+/* MainHeader 관련 스타일 */
+.main-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #f8fafc; /* 아주 연한 틴트 */
+  color: #111827;
+  padding: 0.75rem 1.5rem;
+  border-bottom: 1px solid #e5e7eb;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
+  z-index: 1000;
+}
+
+.main-header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.main-logo {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #111827;
+  text-decoration: none;
+}
+
+.main-nav {
+  display: flex;
+  list-style: none;
+  gap: 1.25rem;
+}
+.main-nav span {cursor: pointer;}
+.main-nav a, .main-nav span {
+  color: #374151;
+  text-decoration: none;
+  padding: 0.25rem 0.25rem;
+  border-radius: 4px;
+  transition: color 0.2s ease, background-color 0.2s ease;
+}
+
+.main-nav a:hover,
+.main-nav a.active,
+.main-nav span:hover,
+.main-nav span.active {
+  color: #111827;
+  background-color: #eef2ff; /* 살짝 더 컬러감 있는 hover */
+}
+
+/* MainFooter 관련 스타일 */
+.main-footer {
+  border-top: 1px solid #e5e7eb;
+  background-color: #f9fafb; /* 아주 연한 그레이 틴트 */
+  color: #6b7280;
+}
+
+.main-footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-nav {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.footer-nav a {
+  color: #6b7280;
+  text-decoration: none;
+}
+
+.footer-nav a:hover {
+  color: #374151;
+}
+
+@media (max-width: 1024px) {
+  .main-layout .main-content {padding: 2.5rem 2rem;}
+}
+
+@media (max-width: 640px) {
+  .main-footer-content {flex-direction: column; gap: 0.5rem;}
+}
+
+@media (max-width: 480px) {
+  .main-layout .main-content {padding: 1.5rem;}
+  .main-header-content {flex-direction: column; align-items: stretch; gap: 0.5rem;}
+  .main-nav {justify-content: space-between;}
+}
+

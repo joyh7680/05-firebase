@@ -1,0 +1,52 @@
+.book-actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.soldout-btn,
+.edit-btn,
+.delete-btn {
+  padding: 0.4rem 0.8rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.soldout-btn {
+  background: #f9ead0;
+  color: #f59e0b;
+}
+
+.soldout-btn:hover {
+  background: #fadfb1;
+  transform: translateY(-1px);
+}
+
+.edit-btn {
+  background: #e0e7ff;
+  color: #6366f1;
+}
+
+.edit-btn:hover {
+  background: #c7d2fe;
+  transform: translateY(-1px);
+}
+
+.delete-btn {
+  background: #fee2e2;
+  color: #dc2626;
+}
+
+.delete-btn:hover {
+  background: #fecaca;
+  transform: translateY(-1px);
+}
+
+@media (max-width: 768px) {
+  .book-actions {
+    align-self: flex-end;
+  }
+}
